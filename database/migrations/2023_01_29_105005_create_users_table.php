@@ -13,7 +13,6 @@ return new class extends Migration
             $table->foreignId('team_id')->constrained('teams')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('user_role_id')->constrained('user_roles')->onUpdate('cascade')->onDelete('cascade');
             $table->string('name');
-            $table->string('role');
             $table->timestamps();
         });
     }
