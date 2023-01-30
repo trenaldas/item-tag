@@ -32,3 +32,7 @@ Route::get('/register', function () {
 Route::get('/forgotpassword', function () {
     return view('auth/forgotpassword');
 });
+
+Route::get('/users', function () {
+    return view('users/users');
+});
